@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <div id="app">
+        <header class="navbar">
+            <div class="navbar-left">
+                <button @click="navigate('home')">Home</button>
+                <button @click="navigate('services')">Services</button>
+                <button @click="navigate('about')">About</button>
+                <button @click="navigate('contact')">Contact</button>
+            </div>
+            <div class="navbar-right">
+                <button @click="navigate('login')">Login</button>
+                <button @click="navigate('signup')">Signup</button>
+            </div>
+        </header>
+
+        <!-- Your Vue.js components will be rendered here -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
